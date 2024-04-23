@@ -1,0 +1,232 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    font-family:"sedan", monospace;
+    font-weight: 400;
+    font-style:normal;
+    background-color: rgb(105, 178, 128);
+}
+h1 {
+    font-size: 4rem;
+    color: white;
+}
+h2 {
+    font-size: 3rem;
+    color: white;
+}
+h3{
+    font-size: 1.5rem;
+}
+p {font-size: 2 rem;}
+/*logo es fejlec*/
+header {
+
+    width: 95%;
+    height: 95px;
+    display:flex;
+    justify-content: space-between;
+align-items:center;}
+
+figure{
+    padding: 2px;
+    display: flex;
+    justify-content:flex-start;
+}
+
+    figure img {
+        width: 95px;
+        display: flex;
+    justify-content:right;
+
+    }
+    nav .menu-up{
+        display: flex;
+        justify-content:left;
+    }
+    nav .menu-up li{
+        margin: 0 80px; /* tavolsag*/
+        list-style-type: circle;
+        color: rgb(1, 19, 1);
+        font-size: 1.2rem;
+        font-style:inherit ; /* lista pontozas*/
+    }
+  
+    
+    section .backg-1 img{
+        width: 100%;
+      margin: 0%;
+        background-size: cover;
+        background-position: center;}
+    .pozi{
+        position:relative;
+        display: flex;
+        justify-content: center;
+    }
+    .pozi-info{
+        position: absolute;
+        top: 50%;
+         text-align: center;
+         background:transparent;
+       }
+
+
+         .pozi-info h1, .pozi-info h2 {
+            color:white;
+            background-color: transparent;
+         }
+    .pozi .buttons button{
+        padding: 15px 60px;
+        margin: 10px 20px;
+        color: white;
+        font-weight:initial;
+        border:transparent;
+    }
+    .more{
+        text-align: center;
+        margin:3rem;
+        padding: 30px;
+    }
+    .more h3 {
+        color:rgb(2, 26, 12);
+        margin: 10px;
+        padding: 10px;
+    }
+    .more h2 {
+    font-size: 3rem;
+    margin: 20px 0 40px 0;
+    color:rgb(10, 30, 14); ;
+    }
+    .more p {
+      /* background-color:rgb(95, 191, 22);*/
+        color:rgb(3, 23, 7);
+        line-height: 1.5rem;
+    }
+    footer {
+      /* background: rgb(95, 191, 22);*/
+        color:white;
+        display: flex;
+    justify-content: space-around;
+
+    align-items: center;
+    
+    }
+    footer .subcription {
+      text-align: center;
+        width: 40%; 
+        padding: 50px;
+    }
+    form { display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    
+    }
+    form input{
+        margin: 1px 0;
+        padding: 10px;
+        border: none;
+        background:rgb(10, 30, 14);
+        color:white;
+        text-align: center;
+    
+    }
+    form button{
+        padding: 25px 25px;
+        background: rgb(123, 238, 146);
+        border: none;
+        color:white;
+    }
+    footer .social-media 
+    {
+    text-align: center;
+    }
+    
+    footer .social-media ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+    }
+    footer .social-media ul li a i {
+        color:rgb(10, 30, 14);
+        font-size: 3rem;
+        margin-top: 20px 10px 0 0;
+        width: 50px;
+        height: 50px;
+    }
+    /* telefonra
+    @media (max-width: 1024px)
+    {
+        body {background: green;
+        }
+    }*/
+    @media( max-width: 1024px)
+    {h1 {
+        font-size: 2rem;
+    }h2 { font-size: 2rem;}
+        header{
+            display: block;
+            margin:0 auto;
+            height: auto;
+        }
+        figure{
+            width: 100%;
+            text-align: center;
+        }
+        nav .menu-principal 
+        {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .pozi{
+            position:static;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+           margin-top: 3rem;
+    
+        }
+        .pozi-info{
+            margin: 20px;
+            position: static;
+       
+             text-align: center;}
+    
+             .pozi-info h1, pozi-info h2 {
+                color:rgb(2, 39, 7);
+             }
+         .buttons button{
+            padding: 30px 70px;
+            margin-top: 3rem;
+            background: rgb(108, 249, 96);
+            color:rgb(239, 239, 211);
+            font-weight:bold;
+            border:none;
+          
+        }
+        .pozi, pozi-info {
+            display: block;
+            positon:static;
+            color: rgb(7, 43, 27);
+        }
+        .more{
+            margin: 0;
+        }
+        .more h2 {
+            font-size: 2rem;
+        }
+        .more h3 {
+            font-size: 1.5rem;
+            color: rgb(1, 7, 1);
+        }
+        footer {
+            flex-direction: column;
+        }
+    }
+   
+         
+    
+      
